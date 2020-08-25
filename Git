@@ -21,9 +21,9 @@
     git init
 4) 비쥬얼 스튜디오 킬게
     code .
+            코드 작성 
 
 -- Github에 일단 원격저장소 만들기 : +버튼 -> new  repository --
-
 add, commit, push
 5) 사진대에 파일 올리기
     git add 파일명
@@ -38,29 +38,29 @@ add, commit, push
 ■협업툴■
 
 [1] push & pull : push - clone - pull
-    집에서 내려받기 : clone은 처음 한번만, 추가된것 가져올때는 pull
-    mkdir home      cd home     git clone 깃허브주소
-    git pull origin master
+    집에서 내려받기 : clone은 처음 한번만! 이후 추가된것 가져올때는 pull
+    mkdir home,      cd home,     git "clone" 허브주소
+    이후는 git ""pull"" origin master
     
 [2] Fork & PR
-    1.포크뜬다 : 어떤 리포지터리를 내 리포지터리로 복사
-    git clone 포크뜬리포지터리 주소
+    1.포크뜬다 : 포크 버튼 : 어떤 리포지터리를 내 리포지터리로 복사
+    git "clone" "포크뜬" 내 리포지터리 주소
     파일 수정 후 저장
-    내 리포지터리로 다시 add commit push
+    "내" 리포지터리로 다시 add commit push
     2.pull request : 수정사항 반영 요청.
     3.Merge (관리자만 가능)
       Merge pull request -> confirm merge
       
-[3] Shared Repository   각자의 branch에서 작업하다-> maincode에 합친다. (branch는 일회성이므로, 합치고 삭제해줌)
-     리포지터리 - setting - access - invite a collaborator
+[3] Shared Repository   각자의 branch에서 작업하다-> maincode에 합친다. (branch는 일회성이므로, 합치고 삭제해 줌)
+     리포지터리에서 -> setting메뉴 -> access -> "invite" a collaborator
      
-     브랜치 생성
+     브랜치 생성하기!
       git branch 브랜치명
-     브랜치로 이동(checkout하러 간다~)    (브랜치에는 당연히 마스터의 파일이 다 존재)
+     브랜치로 이동한다(checkout하러 간다~)   (브랜치에는 당연히 마스터의 파일이 다 존재!!)
       git checkout 브랜치
      
-     add  commit  후,
-     git checkout master (마스터로이동)
+     add  commit 만 한 후,
+     git checkout master (마스터로 다시이동!!)
      git merge 브랜치 !
      
-     ※브랜치 삭제 git branch -d 브랜치
+     ※브랜치 삭제까지: git branch -d 브랜치
