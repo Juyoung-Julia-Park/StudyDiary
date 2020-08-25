@@ -1,0 +1,66 @@
+필요 도구 : 깃 -> 깃바쉬 다운로드 : Git cmd
+            깃허브 계정 가입 : github.com/계정명/계정명.github.io.git 앞으로 너의 깃주소
+            ※비쥬얼스튜디오코드 : 소스코드편집기 (JavaScript, C++, C#, Java, Python, PHP, Go 지원)
+              Typora : 마크다운 문서작성
+
+
+★ 모든 프로젝트에는 README.md 반드시 넣어야 한다.
+
+협업 툴 3가지- Push & Pull
+             - Fork & PR : 오픈(초대X), push권한X
+             - Shared Repository
+
+
+■원격저장소에 밀어넣기■
+
+1) 저장할 폴더 생성 (git은 폴더단위로 파일을 관리)
+    mkdir 폴더명
+2) 폴더로 이동
+    cd 폴더명    (최상위: cd~ , 바로상위:cd ..)
+3) 깃아 시작할게^^
+    git init
+4) 비쥬얼 스튜디오 킬게
+    code .
+
+-- Github에 일단 원격저장소 만들기 : +버튼 -> new  repository --
+
+add, commit, push
+5) 사진대에 파일 올리기
+    git add 파일명
+6) 사진 찍기 ( + 사진 정보 태그 )
+    git commit -m "blah blah~"
+-- 원격 저장소 주소를 알려주세요 --
+    git remote add origin 리포지터리 복사주소
+7) 원격저장소에 밀어 넣기
+    git push origin master
+    
+
+■협업툴■
+
+[1] push & pull : push - clone - pull
+    집에서 내려받기 : clone은 처음 한번만, 추가된것 가져올때는 pull
+    mkdir home      cd home     git clone 깃허브주소
+    git pull origin master
+    
+[2] Fork & PR
+    1.포크뜬다 : 어떤 리포지터리를 내 리포지터리로 복사
+    git clone 포크뜬리포지터리 주소
+    파일 수정 후 저장
+    내 리포지터리로 다시 add commit push
+    2.pull request : 수정사항 반영 요청.
+    3.Merge (관리자만 가능)
+      Merge pull request -> confirm merge
+      
+[3] Shared Repository   각자의 branch에서 작업하다-> maincode에 합친다. (branch는 일회성이므로, 합치고 삭제해줌)
+     리포지터리 - setting - access - invite a collaborator
+     
+     브랜치 생성
+      git branch 브랜치명
+     브랜치로 이동(checkout하러 간다~)    (브랜치에는 당연히 마스터의 파일이 다 존재)
+      git checkout 브랜치
+     
+     add  commit  후,
+     git checkout master (마스터로이동)
+     git merge 브랜치 !
+     
+     ※브랜치 삭제 git branch -d 브랜치
